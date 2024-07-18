@@ -4,6 +4,4 @@ class Entidad:
         self.telefono = telefono
 
     def datos(self):
-        return f"{self.denominacion}, {self.telefono}"
-    def tipo(self):
-        return "Contacto"
+        return f"Denominación: {self.denominacion}, Teléfono: {self.telefono}"
