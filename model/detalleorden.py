@@ -1,38 +1,47 @@
-class Orden:
-    def __init__(self, id_orden, id_empleado, id_mesa, fecha_hora, estado):
+class DetalleOrden:
+    def __init__(self, id_detalleorden, id_orden, id_plato, cantidad, unitario, total):
+        self.id_detalleorden = id_detalleorden
         self.id_orden = id_orden
-        self.id_empleado = id_empleado
-        self.id_mesa = id_mesa
-        self.fecha_hora = fecha_hora
-        self.estado = estado
+        self.id_plato = id_plato
+        self.cantidad = cantidad
+        self.unitario = unitario
+        self.total = total
 
     def set_id_orden(self, id_orden):
         self.__id_orden = id_orden
     
-    def set_id_empleado(self, id_empleado):
-        self.__id_empleado = id_empleado
+    def set_id_orden(self, id_orden):
+        self.__id_orden = id_orden
 
-    def set_id_mesa(self, id_mesa):
-        self.__id_mesa = id_mesa
+    def set_id_plato(self, id_plato):
+        self.__id_plato = id_plato
 
-    def set_fecha_hora(self, fecha_hora):
-        self.__fecha_hora = fecha_hora
+    def set_cantidad(self, cantidad):
+        self.__cantidad = cantidad
 
-    def set_estado(self, estado):
-        self.__estado = estado
+    def set_unitario(self, unitario):
+        self.__unitario = unitario
+
+    def set_total(self, total):
+        self.__total = total
+
+
 
 
     def set_id_orden(self):
         return self.__id_orden
     
-    def set_id_empleado(self):
-        return self.__id_empleado 
+    def set_id_orden(self):
+        return self.__id_orden 
 
-    def set_id_mesa(self):
-        return self.__id_mesa 
+    def set_id_plato(self):
+        return self.__id_plato 
 
-    def set_fecha_hora(self):
-        return self.__fecha_hora 
+    def set_cantidad(self):
+        return self.__cantidad 
 
-    def set_estado(self):
-        return self.__estado
+    def set_unitario(self):
+        return self.__unitario
+    
+    def set_total(self):
+        return self.__total
